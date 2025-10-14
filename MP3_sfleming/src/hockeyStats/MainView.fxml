@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/25" 
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="hockeyStats.MainController"
+      spacing="10" alignment="TOP_LEFT" prefWidth="600" prefHeight="400">
+    
+    <VBox fx:id="chartBox" spacing="5" />
+</VBox>
