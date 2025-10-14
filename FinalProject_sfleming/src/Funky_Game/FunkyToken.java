@@ -1,30 +1,44 @@
 package Funky_Game;
 
+
+/**
+ * method to establish game tokens
+ * provides positional information on the board to the tokens
+ * declares whether the piece is alive[active] and should continue to call the move algorithm or not 
+ * Users can pass in the token symbol they want to use.
+ * All token pieces should be able to move.
+ */
 public abstract class FunkyToken {
-    // Token symbol (e.g., @, $, &)
-    public char token;
-    
-    // Position on the board
-    public int row;
-    public int column;
-    
-    // Active status to determine if token can still move
-    public boolean active;
-    
-    /**
-     * Constructor for FunkyToken
-     * @param token The character symbol for the token
-     */
-    public FunkyToken(char token) {
-        this.token = token;
-        this.active = true; // Initialize token as active
-        this.row = -1;     // Initialize position as invalid until placed
-        this.column = -1;
-    }
-    
-    /**
-     * Abstract method to define token movement behavior
-     * @param board The game board on which the token moves
-     */
-    public abstract void move(FunkyBoard board);
+
+//	characters @ $ &
+	public char token;
+	
+//	token needs to know position on the board to track where it currently is, where moving takes it, etc.
+	public int rowPos;
+	public int columnPos;
+	
+//	decides whether a piece should continue to move or has been eaten
+	public Boolean active;
+//	public boolean active = true
+	
+	
+	/**
+	 * takes in the board as a parameter to decide movement for tokens
+	 * @param board
+	 */
+	public abstract void move(FunkyBoard board);
+	
+	/**
+	 * token constructor
+	 * @param token
+	 */
+public FunkyToken(char token) {
+	super();
+	this.token = token;
+}
+	
+	
+	
+	
+	
 }
