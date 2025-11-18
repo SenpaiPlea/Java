@@ -3,7 +3,7 @@ package Funky_Game;
 public class FunkyGameDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// 
 		FunkyToken winner = null;
 		FunkyBoard board = new FunkyBoard(7);
 		FunkyToken[] tokens = new FunkyToken[3];
