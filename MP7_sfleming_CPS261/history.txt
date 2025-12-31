@@ -1,0 +1,7 @@
+Winner: Player 2, Player1 Score: 64 (Round: 0), Player2 Score: 102 (Round: 0)
+2025-12-12 21:41:40,Computer,105,Sen,56
+2025-12-12 22:26:03,Sen,102,Computer,99
+2025-12-12 22:51:35,Sen,102,Computer,0,Sen
+2025-12-12 22:52:08,Player 1,101,Computer,0,Player 1
+2025-12-12 22:54:40,Sen,99,Computer,100,Computer
+2025-12-12 23:37:45,Sen,57,Computer,114,Computer

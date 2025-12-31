@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainMenuController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="640.0" mouseTransparent="true" pickOnBounds="true">
+         <image>
+            <Image url="@Rolling-dice-GettyImages-93453966-58a6f50c3df78c345b634f6f-468197338.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" spacing="20">
+      
+             <!-- Title -->
+          <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="The Game of Pig" textFill="WHITE" />
+         <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <Label alignment="TOP_CENTER" style="-fx-font-size: 14px;" text="Roll the dice and accumulate points. Reach 100 to win!" textFill="WHITE" />
+               <Label alignment="TOP_CENTER" style="-fx-font-size: 14px;" text="Be careful, rolling a 1 forfeits the points for the round and ends your turn!" textFill="WHITE" wrapText="true" />
+            </children>
+         </VBox>
+      
+             <!-- Player Name Inputs -->
+          <TextField fx:id="player1NameField" maxWidth="200" promptText="Enter Player 1 Name" />
+          <TextField fx:id="player2NameField" maxWidth="200" promptText="Enter Player 2 Name or leave blank if playing solo" />
+      
+             <!-- Start Buttons -->
+          <HBox alignment="CENTER" spacing="20">
+              <Button onAction="#onStartTwoPlayerClick" text="Start Two Player Game" />
+              <Button onAction="#onStartVsComputerClick" text="Start vs Computer" />
+          </HBox>
+      
+             <!-- Other Buttons -->
+          <HBox alignment="CENTER" spacing="20">
+              <Button fx:id="historyButton" onAction="#onHistoryButtonClick" text="History" />
+              <Button fx:id="exitButton" onAction="#onExitButtonClick" text="Exit" />
+          </HBox>
+      
+      </VBox>
+   </children>
+</StackPane>

@@ -1,0 +1,11 @@
+Before sorting:
+ID: 1, Name: JAlice, GPA: 3.5
+ID: 2, Name: Bob, GPA: 3.8
+ID: 3, Name: Charlie, GPA: 2.9
+ID: 4, Name: Diana, GPA: 3.7
+
+After sorting (by studentID):
+ID: 2, Name: Bob, GPA: 3.8
+ID: 3, Name: Charlie, GPA: 2.9
+ID: 4, Name: Diana, GPA: 3.7
+ID: 1, Name: JAlice, GPA: 3.5
